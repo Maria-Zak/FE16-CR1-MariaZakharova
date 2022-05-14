@@ -1,0 +1,226 @@
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                /* box-sizing: border-box; */
+                /* practice for the future */
+            }
+            
+            body {
+                margin: 0;
+            }
+            /* _________Start of the header styling________*/
+            
+            header {
+                background-color: black;
+            }
+            
+            nav {
+                float: right;
+            }
+            
+            .nav {
+                background-color: rgb(139, 24, 27);
+                border: none;
+                text-align: center;
+                color: white;
+                font-size: medium;
+                font-weight: bold;
+                border-radius: 20%;
+                padding: 15px;
+                width: 100px;
+                margin-left: 10px;
+                margin-top: 25px;
+                margin-right: 20px;
+            }
+            
+            input {
+                float: left;
+                width: 800px;
+                height: 30px;
+                margin-top: 30px;
+                margin-right: 20px;
+            }
+            
+            #logo {
+                width: 250px;
+                height: 90px;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            /* ____________End of the header styling________*/
+            /* _________Start of the background section styling________*/
+            
+            .container {
+                max-width: 1300px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            .picture {
+                background-image: url(/pics/keyboard.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center bottom;
+                color: white;
+                /* display: flex; */
+                padding: 150px 0 0 100px;
+            }
+            
+            .picture-box {
+                margin-left: 100px;
+            }
+            
+            .picture-img {
+                width: 150px;
+                height: 100px;
+            }
+            
+            .picture-img img {
+                width: 100%;
+                height: 70%;
+                object-fit: contain;
+            }
+            
+            .picture-title {
+                font-size: 40px;
+                line-height: 50%;
+            }
+            
+            .picture-text {
+                font-size: 20px;
+                line-height: 15px;
+                font-weight: 500;
+            }
+            /* _________End of the background section styling________*/
+            /* _________Start of the content section styling________*/
+            
+            .content {
+                background-color: rgb(26, 24, 24);
+                overflow: hidden;
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: white;
+            }
+            
+            h1 {
+                text-align: center;
+                font-size: 400%;
+                color: rgb(255, 255, 255);
+                text-shadow: 5px 5px rgb(158, 158, 158);
+            }
+            
+            .content-card p {
+                margin: 5px 0;
+                font-size: medium;
+            }
+            
+            hr {
+                width: 80%;
+            }
+            /* this comment section in the solution using float it gives approximately the same result. Can be uncommented to check */
+            /* #left {
+                float: left;
+                background: rgb(35, 90, 141);
+                width: 25%;
+                height: 250px;
+                margin-bottom: 10px;
+                margin-left: 150px;
+                border-radius: 8%;
+                margin-bottom: 50px;
+            }
+            
+            #middle {
+                float: left;
+                background: rgb(35, 90, 141);
+                width: 25%;
+                margin-left: 35px;
+                height: 250px;
+                border-radius: 8%;
+                margin-bottom: 50px;
+            }
+            
+            #right {
+                float: right;
+                background: rgb(35, 90, 141);
+                width: 25%;
+                height: 250px;
+                border-radius: 8%;
+                margin-right: 150px;
+                margin-bottom: 50px;
+            }
+            
+            #left>button {
+                position: absolute;
+                transform: translate(-50%);
+                padding: 10px;
+                margin-top: 30px;
+            }
+            
+            #middle>button {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                padding: 10px;
+                margin-top: 50px;
+            }
+            
+            #right>button {
+                position: absolute;
+                transform: translate(-50%);
+                padding: 10px;
+                margin-top: 75px;
+            } */
+            /* down is the solution I prefer as it looks nicer  please coment this section until the end of section to check the float solution */
+            
+            .content-box {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 50px;
+                margin-left: 150px;
+                margin-right: 150px;
+                margin-bottom: 50px;
+            }
+            
+            .content-card {
+                position: relative;
+                background: rgb(35, 90, 141);
+                height: 250px;
+                border-radius: 14px;
+            }
+            
+            .content-card button {
+                padding: 10px;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            /* _________End of the content section styling________*/
+            /* _________Start of the footer styling________*/
+            
+            footer {
+                height: 100%;
+                font-size: 120%;
+                text-align: center;
+                background-color: black;
+                width: 100%;
+                color: white;
+                padding: 0;
+            }
+            
+            #logo2 {
+                width: 250px;
+                height: 90px;
+                margin-top: 20px;
+            }
+            
+            footer>p {
+                margin-bottom: 0px;
+            }
+            
+            .rights {
+                font-style: italic;
+                font-size: small;
+            }
+            /* _________End of the footer styling________*/
