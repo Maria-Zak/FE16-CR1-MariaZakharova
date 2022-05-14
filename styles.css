@@ -211,6 +211,7 @@
                 width: 100%;
                 color: white;
                 padding: 0;
+                position: relative;
             }
             
             #logo2 {
