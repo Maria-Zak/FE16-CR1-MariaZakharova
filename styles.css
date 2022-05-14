@@ -62,7 +62,8 @@
                 background-size: cover;
                 background-position: center bottom;
                 color: white;
-                /* display: flex; */
+                /* display: flex;  */
+                /* not sure we were allowed to use that therefor commented out */
                 padding: 150px 0 0 100px;
             }
             
